@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'segoe ui';
+
+  }
+
+  .navi {
+    height: 60px;
+    width: 100%;
+
+    position: relative;
+  }
+
+  .navi > .navi-header {
+    display: inline;
+  }
+
+  .navi > .navi-header > .navi-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #E64848;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 10px 10px 10px;
+    margin-top: 20px;
+  }
+
+
+  .navi > .navi-btn {
+    display: none;
+  }
+
+  .navi > .navi-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+  .navi > .navi-links > ul li a{
+    display: block;
+    padding: 0 8px;
+    color: #E64848;
+    line-height: 40px;
+    font-size: 18px;
+    text-decoration: none;
+
+  }
+  .navi > .navi-links > ul{
+    padding: 0;
+    margin-top: 5px;
+    list-style: none;
+    position: relative;
+
+  }
+  .navi > .navi-links > ul li{
+    display: inline-block;
+
+    margin-right: 10px;
+
+
+  }
+  .navi > .navi-links > ul li:hover{
+      background-color: #0b65af;
+      border-radius: 5px;
+  }
+
+  .navi > #navi-check {
+    display: none;
+  }
+
+ .navi .navi-links ul a.icon{
+ margin-left: 80px;
+ margin-right: 10px;
+ }
+
+ .navi .navi-links ul a i{
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 7px;
+    margin-left: 5px;
+ }
+
+
+  @media (max-width:750px) {
+    .navi > .navi-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .navi > .navi-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .navi > .navi-btn > label:hover,.navi  #navi-check:checked ~ .navi-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .navi > .navi-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .navi > .navi-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .navi > .navi-links > ul li a {
+      display: block;
+      width: 100%;
+    }
+
+    /*   */
+
+
+
+      .navi > .navi-links > ul li{
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+        background-color: #333;
+
+      }
+      .navi > .navi-links > ul li a{
+          margin-left: 40%;
+      }
+      .navi .navi-links ul a.icon{
+        margin-left: 33%;
+      }
+
+    /*   */
+    .navi > #navi-check:not(:checked) ~ .navi-links {
+      height: 0px;
+    }
+    .navi > #navi-check:checked ~ .navi-links {
+      height: calc(45vh - 50px);
+      overflow-y: auto;
+    }
+  }
+
+
+
+/* PICTURE */
+
+.intro{
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.introduction{
+font-family: "Montserrat-Bold";
+padding: 0;
+font-size: 4em;
+}
+
+.img-fluid{
+  width: 30%;
+  height: 30%;
+padding-top: 50px;
+margin: 0;
+border-radius: 20%;
+}
+
+
+
+/* PRICING */
+
+#pricing {
+  padding: 30px 200px 150px;
+
+}
+
+h5, h4, .submit{
+  text-align: center;
+}
+
+
+.section-heading, .section-description, .card-header{
+  text-align: center;
+}
+
+.price-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+.card, .card-body{
+  color: #472D2D;
+}
+.card-body{
+
+}
+
+.fa-solid{
+  margin: 0;
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+
+/* PORTFOLIO*/
+
+#features {
+  position: relative;
+  text-align: center;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 2.5%;
+}
+
+.features-box{
+  padding-top: 350px;
+  padding-bottom: 250px;
+}
+
+.icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+
+/* FOOTER */
+.footer-section{
+  margin: 0;
+  padding: 0;
+
+}
+.social-icon {
+  margin: 20px 30px;
+  text-align: center;
+}
+.cont{
+  text-align: center;
+}
+
+@media (max-width: 1028px) {
+
+  #footer{
+    text-align: center;
+  }
